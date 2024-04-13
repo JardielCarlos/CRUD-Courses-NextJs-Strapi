@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:1337/api',
+  baseURL: 'https://worthy-excellence-48663b98d6.strapiapp.com/api',
 });
 
 export default api;
