@@ -17,10 +17,10 @@ const initialCourseState: NewCourse = {
   tags: ''
 };
 
-export default function Home(initialCourses : ApiResponse ) {
+export default function Home({ initialCourses }: { initialCourses: ApiResponse }) {
   Modal.setAppElement('#__next');
   
-  const [courses, setCourses] = useState<ApiResponse>(initialCourses);
+  const [courses, setCourses] = useState(initialCourses);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [updatingCourse, setUpdatingCourse] = useState<CourseDetailsResponse | null>(null);
   const [newCourse, setNewCourse] = useState<NewCourse>(initialCourseState);
